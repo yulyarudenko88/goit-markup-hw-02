@@ -1,0 +1,58 @@
+:root {
+  --title-color: #212121;
+  --desc-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
+body {
+  color: var(--title-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.list {
+  list-style: none;
+}
+
+/* Header section*/
+
+/* .header-nav */
+
+.header a {
+  text-decoration: none;
+}
+
+.header-logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2x;
+  letter-spacing: 0.03em;
+}
+
+.header-logo .accent {
+  color: var(--accent-color);
+}
+
+.nav-link {
+  color: var(--title-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus,
+.header-contacts .contacts-link:hover,
+.header-contacts .contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  color: var(--desc-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+
+/* Hero section */
