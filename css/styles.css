@@ -1,25 +1,29 @@
 :root {
+  --main-background-color: #ffffff;
+  --section-background-color: #2f303a;
+  --list--background-color: #f5f4fa;
   --title-color: #212121;
   --desc-text-color: #757575;
+  --primary-white-color: #ffffff;
   --accent-color: #2196f3;
 }
 
 body {
+  background-color: var(--main-background-color);
   color: var(--title-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
+
+.link {
+  text-decoration: none;
+}
+
 .list {
   list-style: none;
 }
 
 /* Header section*/
-
-/* .header-nav */
-
-.header a {
-  text-decoration: none;
-}
 
 .header-logo {
   color: #000000;
@@ -56,3 +60,22 @@ body {
 }
 
 /* Hero section */
+
+.hero {
+  background-color: var(--section-background-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
