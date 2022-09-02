@@ -4,7 +4,7 @@
   --list-background-color: #f5f4fa;
   --title-color: #212121;
   --desc-color: #757575;
-  --primary-white-color: #ffffff;
+  --white-color: #ffffff;
   --accent-color: #2196f3;
 }
 
@@ -55,6 +55,10 @@ body {
 .nav-link:focus {
   color: var(--accent-color);
 }
+.nav-link.current {
+  color: var(--accent-color);
+}
+
 
 .contacts {
   color: var(--desc-color);
@@ -77,7 +81,7 @@ body {
 }
 
 .hero-title {
-  color: var(--primary-white-color);
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -88,7 +92,13 @@ body {
 
 .button {
   background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  color: var(--white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--white-color);
+  color: var(--accent-color);
 }
 
 /* Benefits section */
@@ -140,7 +150,7 @@ line-height: 1.19;
 
 .footer .footer-logo,
 .footer .address {
-  color: var(--primary-white-color);
+  color: var(--white-color);
 }
 
 .footer-contacts .contacts {
