@@ -46,7 +46,7 @@ body {
 .header-logo:focus,
 .footer-logo:hover,
 .footer-logo:focus {
-   text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav-link {
@@ -63,18 +63,18 @@ body {
   color: var(--accent-color);
 }
 
-
 .contacts {
   color: var(--desc-color);
 }
-.contacts:focus,
-.contacts:hover {
+
+.header-contacts .contacts:focus,
+.header-contacts .contacts:hover {
   color: var(--accent-color);
 }
 
 .header-contacts .contacts {
-    font-weight: 500;
-    line-height: 1.14;
+  font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -99,22 +99,22 @@ body {
   color: var(--white-color);
   font-family: inherit;
   font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
   color: var(--white-color);
 }
 
 /* Benefits section */
 
 .benefits-title {
-line-height: 1.14;
-text-transform: uppercase;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .benefits-desc {
@@ -125,9 +125,9 @@ text-transform: uppercase;
 /* Activity section */
 
 .section-title {
- font-size: 36px;
-line-height: 1.17;
-text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* Team section */
@@ -142,14 +142,14 @@ text-align: center;
 
 .team-title {
   font-weight: 500;
-font-size: 16px;
-line-height: 1.19;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .team-desc {
   color: var(--desc-color);
   font-size: 16px;
-line-height: 1.19;
+  line-height: 1.19;
 }
 
 /* Footer section */
@@ -168,10 +168,10 @@ line-height: 1.19;
   font-style: normal;
 }
 
-/* .address:hover,
-.address:focus {
-  color: var(--accent-color);
-} */
+.footer-contacts .contacts:focus,
+.footer-contacts .contacts:hover {
+  color: var(--white-color);
+}
 
 /* SCC for portfolio.html */
 
@@ -181,28 +181,26 @@ line-height: 1.19;
   background-color: var(--list-background-color);
   color: var(--title-color);
   font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.63;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
- }
+}
 
- .project-title {
+.project-title {
   color: var(--title-color);
-    font-size: 18px;
+  font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;  
- }
+  letter-spacing: 0.06em;
+}
 
- .project-desc {
+.project-desc {
   color: var(--desc-color);
-    font-size: 16px;
+  font-size: 16px;
   line-height: 1.88;
- }
-
-
+}
