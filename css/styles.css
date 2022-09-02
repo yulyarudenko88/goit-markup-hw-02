@@ -1,9 +1,9 @@
 :root {
   --main-background-color: #ffffff;
   --section-background-color: #2f303a;
-  --list--background-color: #f5f4fa;
+  --list-background-color: #f5f4fa;
   --title-color: #212121;
-  --desc-text-color: #757575;
+  --desc-color: #757575;
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
 }
@@ -13,6 +13,7 @@ body {
   color: var(--title-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .link {
@@ -25,16 +26,22 @@ body {
 
 /* Header section*/
 
-.header-logo {
+.header-logo,
+.footer-logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2x;
-  letter-spacing: 0.03em;
+  line-height: 1.2;
 }
 
-.header-logo .accent {
+.header-logo .accent,
+.footer-logo .accent {
+  color: var(--accent-color);
+}
+
+.header-logo:hover,
+.header-logo:focus {
   color: var(--accent-color);
 }
 
@@ -44,18 +51,22 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-list .nav-link:hover,
-.nav-list .nav-link:focus,
-.header-contacts .contacts-link:hover,
-.header-contacts .contacts-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
-.contacts-link {
-  color: var(--desc-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14px;
+.contacts {
+  color: var(--desc-color);
+}
+.contacts:focus,
+.contacts:hover {
+  color: var(--accent-color);
+}
+
+.header-contacts .contacts {
+    font-weight: 500;
+    line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -79,3 +90,71 @@ body {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
+
+/* Benefits section */
+
+.benefits-title {
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
+.benefits-desc {
+  color: var(--desc-color);
+  line-height: 1.71;
+}
+
+/* Activity section */
+
+.section-title {
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+/* Team section */
+
+.team {
+  background-color: var(--list-background-color);
+}
+
+.team-title {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+}
+
+.team-desc {
+  color: var(--desc-color);
+  font-size: 16px;
+line-height: 1.19;
+}
+
+/* Footer section */
+
+.footer {
+  background-color: var(--section-background-color);
+  line-height: 1.71;
+}
+
+.footer .footer-logo,
+.footer .address {
+  color: var(--primary-white-color);
+}
+
+.footer-contacts .contacts {
+  font-style: normal;
+}
+
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--accent-color);
+}
+
+
