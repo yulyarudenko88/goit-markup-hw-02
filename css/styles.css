@@ -24,6 +24,8 @@ body {
   list-style: none;
 }
 
+/* CSS for index.html */
+
 /* Header section*/
 
 .header-logo,
@@ -41,8 +43,10 @@ body {
 }
 
 .header-logo:hover,
-.header-logo:focus {
-  color: var(--accent-color);
+.header-logo:focus,
+.footer-logo:hover,
+.footer-logo:focus {
+   text-decoration: underline;
 }
 
 .nav-link {
@@ -93,18 +97,22 @@ body {
 .button {
   background-color: var(--accent-color);
   color: var(--white-color);
+  font-family: inherit;
+  font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
 }
 
 .button:hover,
 .button:focus {
-  background-color: var(--white-color);
-  color: var(--accent-color);
+  background-color: #188CE8;
+  color: var(--white-color);
 }
 
 /* Benefits section */
 
 .benefits-title {
-font-weight: 700;
 line-height: 1.14;
 text-transform: uppercase;
 }
@@ -117,8 +125,7 @@ text-transform: uppercase;
 /* Activity section */
 
 .section-title {
-  font-weight: 700;
-font-size: 36px;
+ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 }
@@ -127,6 +134,10 @@ text-align: center;
 
 .team {
   background-color: var(--list-background-color);
+}
+
+.team-item {
+  background-color: var(--main-background-color);
 }
 
 .team-title {
@@ -157,14 +168,41 @@ line-height: 1.19;
   font-style: normal;
 }
 
-.address:hover,
+/* .address:hover,
 .address:focus {
   color: var(--accent-color);
+} */
+
+/* SCC for portfolio.html */
+
+/* Our projects section */
+
+.filter-btn {
+  background-color: var(--list-background-color);
+  color: var(--title-color);
+  font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
 }
 
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--accent-color);
-}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+ }
+
+ .project-title {
+  color: var(--title-color);
+    font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;  
+ }
+
+ .project-desc {
+  color: var(--desc-color);
+    font-size: 16px;
+  line-height: 1.88;
+ }
 
 
