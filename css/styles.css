@@ -5,7 +5,9 @@
   --title-color: #212121;
   --desc-color: #757575;
   --white-color: #ffffff;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
+  --dark-logo-color: #000000;
 }
 
 body {
@@ -30,7 +32,7 @@ body {
 
 .header-logo,
 .footer-logo {
-  color: #000000;
+  color: var(--dark-logo-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -42,40 +44,32 @@ body {
   color: var(--accent-color);
 }
 
-.header-logo:hover,
-.header-logo:focus,
-.footer-logo:hover,
-.footer-logo:focus {
-  text-decoration: underline;
-}
-
 .nav-link {
   color: var(--title-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
 }
+
 .nav-link.current {
   color: var(--accent-color);
 }
 
-.contacts {
-  color: var(--desc-color);
-}
-
-.header-contacts .contacts:focus,
-.header-contacts .contacts:hover {
-  color: var(--accent-color);
-}
-
 .header-contacts .contacts {
+  color: var(--desc-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
 }
 
 /* Hero section */
@@ -113,7 +107,22 @@ body {
 
 /* Benefits section */
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .benefits-title {
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -126,6 +135,7 @@ body {
 /* Activity section */
 
 .section-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -165,15 +175,18 @@ body {
   color: var(--white-color);
 }
 
-.footer-contacts .contacts {
+address {
   font-style: normal;
 }
 
-.footer-contacts .contacts:focus,
-.footer-contacts .contacts:hover {
-  color: var(--white-color);
+.footer-contacts .contacts {
+  color: var(--secondary-white-color);
 }
 
+.footer-contacts .contacts:hover,
+.footer-contacts .contacts:focus {
+  color: var(--accent-color);
+}
 /* SCC for portfolio.html */
 
 /* Our projects section */
