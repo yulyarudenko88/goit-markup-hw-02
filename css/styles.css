@@ -67,8 +67,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts:hover,
-.contacts:focus {
+a.contacts:hover,
+a.contacts:focus {
   color: var(--accent-color);
 }
 
@@ -183,10 +183,6 @@ address {
   color: var(--secondary-white-color);
 }
 
-.footer-contacts .contacts:hover,
-.footer-contacts .contacts:focus {
-  color: var(--accent-color);
-}
 /* SCC for portfolio.html */
 
 /* Our projects section */
